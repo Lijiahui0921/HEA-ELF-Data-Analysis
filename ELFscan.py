@@ -5,7 +5,6 @@ from pymatgen.io.vasp import Chgcar  # ELFCAR 格式与 CHGCAR 完全一致
 from scipy.interpolate import RegularGridInterpolator
 import os
 
-
 def extract_bond_elf(contcar_path, elfcar_path, atom_idx_1, atom_idx_2, output_dir="elf_plots"):
     """
     提取任意两个原子之间的二维 ELF 截面并绘图
