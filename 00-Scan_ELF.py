@@ -13,7 +13,6 @@ def process_single_structure(contcar_path, elfcar_path, output_npz_path, search_
     """
     if plot_images and not os.path.exists(output_dir):
         os.makedirs(output_dir)
-
     print(f"正在读取结构文件: {contcar_path}")
     structure = Structure.from_file(contcar_path)
     total_atoms = len(structure)
